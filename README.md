@@ -12,6 +12,7 @@ Which department has the highest turnover rate?
 What is the distribution of employees across locations by state?
 How has the company's employee count changed over time based on hire and term dates?
 What is the tenure distribution for each department?
+
 Summary of Findings
 There are more male employees
 White race is the most dominant while Native Hawaiian and American Indian are the least dominant.
