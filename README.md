@@ -2,7 +2,7 @@
 This project involves cleansing and analyzing 22,000 HR data entries from 2000 to 2020 using MySQL Workbench, followed by creating insightful visualizations in PowerBI. The aim is to derive actionable HR insights, identify trends, and facilitate data-driven HR decision-making.
 
 
-Questions
+**Questions**
 
 What is the gender breakdown of employees in the company?
 
@@ -26,7 +26,7 @@ How has the company's employee count changed over time based on hire and term da
 
 What is the tenure distribution for each department?
 
-Summary of Findings
+**Summary of Findings**
 
 There are more male employees
 
@@ -52,7 +52,7 @@ The net change in employees has increased over the years.
 The average tenure for each department is about 8 years with Legal and Auditing having the highest and Services, Sales and Marketing having the lowest.
 
 
-Limitations
+**Limitations**
 
 Some records had negative ages and these were excluded during querying(967 records). Ages used were 18 years and above.
 
