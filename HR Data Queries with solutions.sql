@@ -36,20 +36,20 @@ from hr
 where age>=18 and termdate = '0000-00-00';
 
 
-select 
-count(*) as count,
-	case 
-		when age>=18 and age<=24 then '18-24'
-        when age>=25 and age<=34 then '25-34'
-        when age>=35 and age<=44 then '35-44'
-        when age>=45 and age<=54 then '45-54'
-        when age>=55 and age<=64 then '55-64'
-        else '65+'
-	end as age_group
-from hr
-where age>=18 and termdate = '0000-00-00';
-group by age_group, age
-order by age_group;
+SELECT 
+    CASE 
+        WHEN age >= 18 AND age <= 24 THEN '18-24'
+        WHEN age >= 25 AND age <= 34 THEN '25-34'
+        WHEN age >= 35 AND age <= 44 THEN '35-44'
+        WHEN age >= 45 AND age <= 54 THEN '45-54'
+        WHEN age >= 55 AND age <= 64 THEN '55-64'
+        ELSE '65+'
+    END AS age_group,
+    COUNT(*) AS count
+FROM hr
+WHERE age >= 18 AND termdate = '0000-00-00'
+GROUP BY age_group
+ORDER BY age_group;
 
 
 -- method 2 (using subquery)
